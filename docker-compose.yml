@@ -11,8 +11,7 @@ services:
     expose:
       - "8502"
       - "8501"
-    depends_on:
-      - nginx
+
 
   nginx:
     build:
