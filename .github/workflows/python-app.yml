@@ -59,7 +59,7 @@ jobs:
           with :
             context: .
             push : true
-            tags: ${{secrets.DOCKER_USERNAME}}/AI-Agent-accent:latest
+            tags: ${{secrets.DOCKER_USERNAME}}/ai-agent-accent:latest
 
         - name : Image digest
           run : echo ${{steps.build-and-publish.outputs.digest}}
