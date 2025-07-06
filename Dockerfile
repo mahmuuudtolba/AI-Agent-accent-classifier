@@ -10,6 +10,10 @@ RUN pip install --upgrade pip && pip install --timeout 3000 --retries 10 -r requ
 COPY ./backend /app/backend
 COPY ./frontend /app/frontend
 
+EXPOSE 8501
+EXPOSE 8502
+
+
 # Copy entrypoint script to run both apps
 COPY entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
