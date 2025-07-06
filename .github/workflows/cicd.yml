@@ -118,6 +118,6 @@ jobs:
           - name: Deploy to ECS
             uses: aws-actions/amazon-ecs-deploy-task-definition@v2
             with:
-              cluster: spirited-rabbit-netfws
-              service: Flask_app_hello_world-service-q0is1crq
+              cluster: strong-crocodile-5j0qw1
+              service: ai-agent-accent-service-uwifcn5h
               task-definition: ${{ steps.render-task-def.outputs.task-definition }}
